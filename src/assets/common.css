@@ -1,0 +1,297 @@
+/* 全局通用样式 */
+
+/* 按钮样式 */
+.primary-button {
+  background: linear-gradient(90deg, #5dade2, #3498db);
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+  box-shadow: 0 2px 8px rgba(93, 173, 226, 0.3);
+}
+
+.primary-button:hover {
+  background: linear-gradient(90deg, #4a9fd8, #2e86c1);
+  box-shadow: 0 4px 12px rgba(93, 173, 226, 0.4);
+  transform: translateY(-1px);
+}
+
+.primary-button:active {
+  transform: translateY(0);
+}
+
+.secondary-button {
+  background: linear-gradient(90deg, #81c784, #66bb6a);
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+  box-shadow: 0 2px 8px rgba(102, 187, 106, 0.3);
+}
+
+.secondary-button:hover {
+  background: linear-gradient(90deg, #72b876, #5caf60);
+  box-shadow: 0 4px 12px rgba(102, 187, 106, 0.4);
+  transform: translateY(-1px);
+}
+
+.action-button {
+  background: none;
+  border: 1px solid #5dade2;
+  color: #5dade2;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.3s;
+  margin-right: 5px;
+}
+
+.action-button:hover {
+  background: linear-gradient(90deg, #5dade2, #3498db);
+  color: white;
+  box-shadow: 0 2px 6px rgba(93, 173, 226, 0.3);
+}
+
+.action-button.delete {
+  border-color: #e74c3c;
+  color: #e74c3c;
+}
+
+.action-button.delete:hover {
+  background: #e74c3c;
+  color: white;
+  box-shadow: 0 2px 6px rgba(231, 76, 60, 0.3);
+}
+
+/* 表格样式 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+th, td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+th {
+  background: linear-gradient(135deg, #f8f9fa, #f0f0f0);
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 14px;
+}
+
+tbody tr:hover {
+  background-color: #f0f7ff;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* 输入框样式 */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+select {
+  padding: 10px 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+  background: #fafafa;
+  transition: all 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus {
+  outline: none;
+  border-color: #5dade2;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(93, 173, 226, 0.1);
+}
+
+/* 卡片样式 */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  border: 1px solid #e8eaf6;
+  margin-bottom: 20px;
+}
+
+.card h2,
+.card h3 {
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* 筛选区域样式 */
+.filter-section {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: end;
+  border: 1px solid #e8eaf6;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-item label {
+  white-space: nowrap;
+  color: #555;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.search-button {
+  background: linear-gradient(90deg, #5dade2, #3498db);
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+  box-shadow: 0 2px 8px rgba(93, 173, 226, 0.3);
+}
+
+.search-button:hover {
+  background: linear-gradient(90deg, #4a9fd8, #2e86c1);
+  box-shadow: 0 4px 12px rgba(93, 173, 226, 0.4);
+  transform: translateY(-1px);
+}
+
+/* 标签页样式 */
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e8eaf6;
+  gap: 5px;
+}
+
+.tab {
+  padding: 12px 24px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px 8px 0 0;
+  background: #fafafa;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.tab:hover {
+  background: #f0f7ff;
+  color: #3498db;
+}
+
+.tab.active {
+  background: white;
+  color: #3498db;
+  position: relative;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+}
+
+.tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #5dade2, #3498db);
+}
+
+/* 状态标签 */
+.status-normal {
+  color: #66bb6a;
+  font-weight: 600;
+}
+
+.status-warning {
+  color: #f39c12;
+  font-weight: 600;
+}
+
+.status-danger {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+/* 页面标题 */
+h1 {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+h2 {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+h3 {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* 操作区域 */
+.actions {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .filter-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .filter-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .tabs {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+}
